@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:include="fragments/header :: header">
+</head>
+<body>
+<div th:include="fragments/navigation :: navigation"></div>
+<div class="container max-width">
+<div align="center">
+    <h1>Edit Customer</h1>
+    <br />
+    <form action="#" th:action="@{/save}" th:object="${customers}"
+          method="post">
+
+        <table border="0" cellpadding="10">
+            <tr>
+                <td>Customer ID:</td>
+                <td>
+                    <input type="text" th:field="*{custId}" readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td>Customer Name:</td>
+                <td>
+                    <input type="text" th:field="*{custName}" />
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" th:field="*{custAddress}" /></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" th:field="*{custCity}" /></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" th:field="*{custState}" /></td>
+            </tr>
+            <tr>
+                <td>Zip Code:</td>
+                <td><input type="text" th:field="*{custPostalCode}" /></td>
+            </tr>
+            <tr>
+                <td>Phone #:</td>
+                <td><input type="text" th:field="*{custPhoneNum}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Save</button> </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:include="fragments/header :: header">
+</head>
+<body>
+<div th:include="fragments/navigation :: navigation"></div>
+<div class="container">
+<div class="main-content">
+    <h1>Customer List</h1>
+    <br/>
+<div class="customer-container max-width ">
+    <div class="div7 customer-header">ID</div>
+    <div class="div8 customer-header ">Customer Name</div>
+    <div class="div9 customer-header ">Address</div>
+    <div class="div10 customer-header "> Phone Number</div>
+    <div class="div11 customer-header ">Created On</div>
+    <div class="div12 customer-header ">Additional Options</div>
+</div>
+    <div class="customer-container max-width "  th:each="customers : ${listCustomers}">
+        <div class="div1 align-content-customer" th:text="${customers.custId}">id </div>
+        <div class="div2 align-content-customer" th:text="${customers.custName}"> </div>
+        <div class="div3  align-content-customer" >
+            <div th:utext="${customers.completeAddress()}">
+
+            </div></div>
+<!--            <span th:text="${customers.custCity} + ', ' + ${customers.custState} + ' ' +${customers.custPostalCode}"></span> -->
+
+                    <div class="div4 align-content-customer" th:text="${customers.custPhoneNum}"> </div>
+                    <div class="div5 align-content-customer"  th:text="${customers.convertDate(custCreated)}" > </div>
+                    <div class="div6 align-content-customer" > <a th:href="@{'/edit/' + ${customers.custId}}">Edit</a>
+                                    &nbsp;&nbsp;&nbsp;
+                                     <a th:href="@{'/edit/' + ${customers.custId}}">Delete</a> </div>
+                </div>
+
+
+            <!--    <table border="1" cellpadding="10">-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>Customer ID</th>-->
+<!--            <th>Customer Name</th>-->
+<!--            <th>Customer Address</th>-->
+<!--            <th>Customer Phone #</th>-->
+<!--            <th>Created On</th>-->
+<!--            <th>Additional Options</th>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        -->
+<!--        <tr th:each="customers : ${listCustomers}">-->
+<!--            <td th:text="${customers.custId}">Customer Id</td>-->
+<!--            <td th:text="${customers.custName}">Customer Name</td>-->
+<!--            <td> <span th:text="${customers.custAddress}"></span><br/>-->
+<!--            <span th:text="${customers.custCity} + ', ' + ${customers.custState} + ' ' +${customers.custPostalCode}"></span></td>-->
+<!--            <td th:class="centering" th:text="${customers.custPhoneNum}">Customer Phone #</td>-->
+<!--            <td th:text="${customers.convertDate(custCreated)}">Created</td>-->
+
+<!--            <td th:class="centering">-->
+<!--                <a th:href="@{'/edit/' + ${customers.custId}}">Edit</a>-->
+<!--                &nbsp;&nbsp;&nbsp;-->
+<!--                <a th:href="@{'/edit/' + ${customers.custId}}">Delete</a>-->
+
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+</div>
+</div>
+</body>
+</html>
