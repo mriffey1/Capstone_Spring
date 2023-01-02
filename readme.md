@@ -17,12 +17,12 @@ and reports.
 * MySQL Workbench
 
 ## Tasks/Goals for Project
-- [] Different user permissions with different accessibility within the application
-- [] Create more intensive reporting with the ability to export and import data via excel
-- [] Allow users to upload photos of pets
-- [] Double-clicking on fields allows users to edit information dynamically with appropriate alerts to confirm
-- [] The ability to add medication and vaccine records
-- [] Create a cloud based relational database that is normalized
-- [] Show other users on the same screen and alert if changes have been made to refresh
-- [] Use APIs to drive certain data such countries/states, animal breeds
-- [] Create visit summary with notes, medication, animal, vet and owner information
+- [ ] Different user permissions with different accessibility within the application
+- [ ] Create more intensive reporting with the ability to export and import data via excel
+- [ ] Allow users to upload photos of pets
+- [ ] Double-clicking on fields allows users to edit information dynamically with appropriate alerts to confirm
+- [ ] The ability to add medication and vaccine records
+- [ ] Create a cloud based relational database that is normalized
+- [ ] Show other users on the same screen and alert if changes have been made to refresh
+- [ ] Use APIs to drive certain data such countries/states, animal breeds
+- [ ] Create visit summary with notes, medication, animal, vet and owner information
