@@ -26,6 +26,13 @@ public class CustomerController {
         return "index";
     }
 
+    @RequestMapping("/new")
+    public String showNewCustomer(Model model) {
+        Customers customers = new Customers();
+        model.addAttribute("customers", customers);
+
+        return "new_customer";
+    }
     @RequestMapping("/edit/{custId}")
     public ModelAndView showEditCustomerPage(@PathVariable(name = "custId") int custId) {
         ModelAndView mav = new ModelAndView("edit_customer");

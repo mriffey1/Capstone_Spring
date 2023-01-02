@@ -41,7 +41,7 @@ public class Customers {
     private String completeAddress;
 
 
-    protected Customers() {
+    public Customers() {
     }
 
     protected Customers(int custId, String custName, String custAddress, String custCity, String custState, String custPostalCode, String custPhoneNum, LocalDateTime custCreated) {

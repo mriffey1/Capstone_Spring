@@ -42,12 +42,9 @@
             </tr>
             <tr>
                 <td>Phone #:</td>
-                <td><input type="text" th:field="*{custPhoneNum}" /></td>
+                <td><input  type="tel" th:field="*{custPhoneNum}" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /></td>
             </tr>
-
-
             <input  type="hidden" th:field="*{custCreated}" readonly="readonly" />
-
             <tr>
                 <td colspan="2"><button type="submit">Save</button> </td>
             </tr>
