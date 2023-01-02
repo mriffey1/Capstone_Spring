@@ -4,6 +4,18 @@ application was created using JavaFX and JDBC and was created for a factitious v
 It allows users to create customers (owners), animals and associated note records, appointments that could not be overlapped to prevent over-scheduling,
 and reports. The original application was basic and the goal is to provide additional features and scalability. 
 
+## Technology Utilized:
+* IntelliJ IDEA Ultimate
+* Spring Boot
+* Hibernate
+* JPA
+* CSS
+* HTML
+* Thymeleaf
+* JS
+* JDK 17
+* MySQL Workbench
+
 ## Tasks/Goals for Project
 - [ ] Different staff account permissions with different accessibility within the application. This includes having an admin who is capable of creating/deleting/restricting access. 
 - [ ] Create more intensive reporting with the ability to export and import data via excel. This includes having the ability to pull information based on animal information such as animal breeds.
@@ -17,19 +29,9 @@ and reports. The original application was basic and the goal is to provide addit
 - [ ] Have the ability to email the PDF visit summary by checking a box automatically
 - [ ] Appointment reminder alerts via email or text to customers
 
-# Items possible in the future but not currently planned
+### Items possible in the future but not currently planned
 * The ability for the customer (owner) to login and view past animal history, medications and request appointments
 
-## Technology Utilized:
-* IntelliJ IDEA Ultimate
-* Spring Boot
-* Hibernate
-* JPA
-* CSS
-* HTML
-* Thymeleaf
-* JS
-* JDK 17
-* MySQL Workbench
+
 
 
