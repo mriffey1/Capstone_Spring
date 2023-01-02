@@ -2,7 +2,7 @@
 Converting [C868-Capstone](https://github.com/mriffey1/C868-Capstone) to Spring Boot and deploying on the cloud. The original
 application was created using JavaFX and JDBC and was created for a factitious veterinary office using physical paper records.
 It allows users to create customers (owners), animals and associated note records, appointments that could not be overlapped to prevent over-scheduling,
-and reports. The original application was basic and the goal is to provide additional features and scability. 
+and reports. The original application was basic and the goal is to provide additional features and scalability. 
 
 ## Tasks/Goals for Project
 - [ ] Different staff account permissions with different accessibility within the application. This includes having an admin who is capable of creating/deleting/restricting access. 
@@ -15,6 +15,10 @@ and reports. The original application was basic and the goal is to provide addit
 - [ ] Use APIs to drive certain data such countries/states, animal breeds, medication (from FDA)
 - [ ] Create physical summary (pdf) with notes, medication, animal, vet and owner information
 - [ ] Have the ability to email the PDF visit summary by checking a box automatically
+- [ ] Appointment reminder alerts via email or text to customers
+
+# Items possible in the future but not currently planned
+* The ability for the customer (owner) to login and view past animal history, medications and request appointments
 
 ## Technology Utilized:
 * IntelliJ IDEA Ultimate
