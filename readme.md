@@ -5,14 +5,14 @@ It allows users to create customers (owners), animals and associated note record
 and reports. 
 
 ## Tasks/Goals for Project
-- [ ] Different user permissions with different accessibility within the application
-- [ ] Create more intensive reporting with the ability to export and import data via excel
-- [ ] Allow users to upload photos of pets
-- [ ] Double-clicking on fields allows users to edit information dynamically with appropriate alerts to confirm
-- [ ] The ability to add medication and vaccine records
-- [ ] Create a cloud based relational database that is normalized
-- [ ] Show other users on the same screen and alert if changes have been made to refresh
-- [ ] Use APIs to drive certain data such countries/states, animal breeds
+- [ ] Different staff account permissions with different accessibility within the application. This includes having an admin who is capable of creating/deleting/restricting access. 
+- [ ] Create more intensive reporting with the ability to export and import data via excel. This includes having the ability to pull information based on animal information such as animal breeds.
+- [ ] Allow staff to upload photos of pets
+- [ ] Double-clicking on fields allows staff to edit information dynamically with appropriate alerts to confirm
+- [ ] The ability to add medication and vaccine records to animals
+- [ ] Create a cloud-based relational database that is normalized and identify any technology that may provide greater speed. 
+- [ ] Show other staff members on the same screen and alert if changes have been made to refresh (or lock screen if another user is already editing)
+- [ ] Use APIs to drive certain data such countries/states, animal breeds, medication (from FDA)
 - [ ] Create visit summary with notes, medication, animal, vet and owner information
 
 ## Technology Utilized:
