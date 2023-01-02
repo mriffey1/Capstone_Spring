@@ -13,7 +13,8 @@ and reports.
 - [ ] Create a cloud-based relational database that is normalized and identify any technology that may provide greater speed. 
 - [ ] Show other staff members on the same screen and alert if changes have been made to refresh (or lock screen if another user is already editing)
 - [ ] Use APIs to drive certain data such countries/states, animal breeds, medication (from FDA)
-- [ ] Create visit summary with notes, medication, animal, vet and owner information
+- [ ] Create physical summary (pdf) with notes, medication, animal, vet and owner information
+- [ ] Have the ability to email the PDF visit summary by checking a box automatically
 
 ## Technology Utilized:
 * IntelliJ IDEA Ultimate
