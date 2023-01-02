@@ -1,7 +1,9 @@
-package com.riffey.capstone_spring;
+package com.riffey.capstone_spring.services;
 
 import java.util.List;
 
+import com.riffey.capstone_spring.repositories.CustomerRepository;
+import com.riffey.capstone_spring.domain.Customers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package com.riffey.capstone_spring;
+package com.riffey.capstone_spring.domain;
 
 import javax.persistence.*;
 import java.text.DateFormat;

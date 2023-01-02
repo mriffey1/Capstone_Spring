@@ -44,6 +44,10 @@
                 <td>Phone #:</td>
                 <td><input type="text" th:field="*{custPhoneNum}" /></td>
             </tr>
+
+
+            <input  type="hidden" th:field="*{custCreated}" readonly="readonly" />
+
             <tr>
                 <td colspan="2"><button type="submit">Save</button> </td>
             </tr>
