@@ -32,6 +32,12 @@ and reports. The original application was basic and the goal is to provide addit
 ### Items possible in the future but not currently planned
 * The ability for the customer (owner) to login and view past animal history, medications and request appointments
 
+#### Lessons Learned
+1. Annotations
+2. Database
+   - Learned how to specify database column name and keep variable name separate for security using the @Column annotation
+   - How to display the database data in a Thymeleaf template
+
 
 
 
