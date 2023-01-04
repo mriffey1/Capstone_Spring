@@ -1,5 +1,5 @@
 # Spring Boot based project
-Converting [C868-Capstone](https://github.com/mriffey1/C868-Capstone) to Spring Boot and deploying on the cloud. The original
+Converting [C868-Capstone](https://github.com/mriffey1/C868-Capstone) to Spring Boot and deploying to the cloud. The original
 application was created using JavaFX and JDBC and was created for a factitious veterinary office using physical paper records.
 It allows users to create customers (owners), animals and associated note records, appointments that could not be overlapped to prevent over-scheduling,
 and reports. The original application was basic and the goal is to provide additional features and scalability. 
