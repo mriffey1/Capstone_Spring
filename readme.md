@@ -38,6 +38,10 @@ and reports. The original application was basic and the goal is to provide addit
    - Learned how to specify database column name and keep variable name separate for security using the @Column annotation
    - How to display the database data in a Thymeleaf template
 
+#### Updates
+Feb. 14, 2023: Added the Animals list and updated the navigation. In addition, modified the CSS to make current content more readable. Determined that replacing the CSS Grid will a table will work better.
+Still working on figuring out joining tables with JPA and Hibernate. 
+
 
 
 

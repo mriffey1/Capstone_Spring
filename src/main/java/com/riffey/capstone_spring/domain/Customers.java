@@ -1,13 +1,15 @@
 package com.riffey.capstone_spring.domain;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.springframework.data.jpa.repository.Query;
+
 import javax.persistence.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
+import java.util.*;
 
 @Entity
 @Table(name = "customers")
@@ -16,6 +18,11 @@ public class Customers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Customer_Id")
     private int custId;
+
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "Customer_ID", insertable = false, updatable = false)
+//    @Fetch(FetchMode.JOIN)
+//    private Animals animals;
 
     @Column(name = "Customer_Name")
     private String custName;
@@ -38,7 +45,9 @@ public class Customers {
     @Column(name = "Create_Date")
     private LocalDateTime custCreated;
 
+    @Transient
     private String completeAddress;
+
 
 
     public Customers() {
@@ -154,5 +163,9 @@ public class Customers {
 
         return  this.custAddress + "<br/>" + this.custCity + ", " + this.custState + " " + this.custPostalCode;
     }
+
+
+
+
 }
 
