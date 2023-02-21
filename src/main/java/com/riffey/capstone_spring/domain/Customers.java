@@ -1,7 +1,11 @@
 package com.riffey.capstone_spring.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.aspectj.weaver.patterns.TypePatternQuestions;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.data.jpa.repository.Query;
 
 import javax.persistence.*;
@@ -14,15 +18,12 @@ import java.util.*;
 @Entity
 @Table(name = "customers")
 public class Customers {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Customer_Id")
     private int custId;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "Customer_ID", insertable = false, updatable = false)
-//    @Fetch(FetchMode.JOIN)
-//    private Animals animals;
 
     @Column(name = "Customer_Name")
     private String custName;

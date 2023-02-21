@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:include="fragments/header :: header">
+</head>
+<body>
+<div th:include="fragments/navigation :: navigation"></div>
+<div class="container">
+    <div class="main-content">
+        <h1>Appointment List</h1>
+        <br/>
+        <div class="animal-container max-width">
+            <div class="div1 customer-header">ID</div>
+            <div class="div2 customer-header ">Title</div>
+            <div class="div3 customer-header ">Description</div>
+<!--            <div class="div4 customer-header ">Location</div>-->
+<!--            <div class="div5 customer-header ">Type</div>-->
+<!--            <div class="div6 customer-header ">Start</div>-->
+<!--            <div class="div7 customer-header ">End</div>-->
+        </div>
+        <div class="animal-container max-width"  th:each="appointments : ${listAppointments}">
+            <div class="div1 align-content-animal" th:text="${appointments.appointId}">id </div>
+            <div class="div2 align-content-animal" th:text="${appointments.apptTitle}"> </div>
+            <div class="div3  align-content-animal" >
+                <div th:utext="${appointments.apptDescription}">
+
+                </div></div>
+            <!--            <span th:text="${customers.custCity} + ', ' + ${customers.custState} + ' ' +${customers.custPostalCode}"></span> -->
+
+<!--            <div class="div4 align-content-animal" th:text="${animals.animalAge}"> </div>-->
+<!--            <div class="div5 align-content-animal"  th:text="${animals.animalBreed}" > </div>-->
+<!--            <div class="div6 align-content-animal"  th:text="${animals.animalWeight}" > </div>-->
+<!--            <div class="div7 align-content-customer"> <a th:href="@{'/edit/' + ${animals.animalId}}">Edit</a>-->
+<!--                &nbsp;&nbsp;&nbsp;-->
+<!--                <a th:href="@{'/edit/' + ${animals.animalId}}">Delete</a> </div>-->
+<!--        </div>-->
+
+
+        <!--    <table border="1" cellpadding="10">-->
+        <!--        <thead>-->
+        <!--        <tr>-->
+        <!--            <th>Customer ID</th>-->
+        <!--            <th>Customer Name</th>-->
+        <!--            <th>Customer Address</th>-->
+        <!--            <th>Customer Phone #</th>-->
+        <!--            <th>Created On</th>-->
+        <!--            <th>Additional Options</th>-->
+        <!--        </thead>-->
+        <!--        <tbody>-->
+        <!--        -->
+        <!--        <tr th:each="customers : ${listCustomers}">-->
+        <!--            <td th:text="${customers.custId}">Customer Id</td>-->
+        <!--            <td th:text="${customers.custName}">Customer Name</td>-->
+        <!--            <td> <span th:text="${customers.custAddress}"></span><br/>-->
+        <!--            <span th:text="${customers.custCity} + ', ' + ${customers.custState} + ' ' +${customers.custPostalCode}"></span></td>-->
+        <!--            <td th:class="centering" th:text="${customers.custPhoneNum}">Customer Phone #</td>-->
+        <!--            <td th:text="${customers.convertDate(custCreated)}">Created</td>-->
+
+        <!--            <td th:class="centering">-->
+        <!--                <a th:href="@{'/edit/' + ${customers.custId}}">Edit</a>-->
+        <!--                &nbsp;&nbsp;&nbsp;-->
+        <!--                <a th:href="@{'/edit/' + ${customers.custId}}">Delete</a>-->
+
+        <!--            </td>-->
+        <!--        </tr>-->
+        <!--        </tbody>-->
+        <!--    </table>-->
+    </div>
+</div>
+</div>
+</body>
+</html>

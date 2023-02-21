@@ -1,18 +1,24 @@
 package com.riffey.capstone_spring.domain;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
 @Table(name = "animals")
 public class Animals {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Animal_ID")
     private int animalId;
 
-//    @OneToMany(targetEntity = Customers.class, mappedBy = "Customer_ID", orphanRemoval = false, fetch = FetchType.LAZY)
-//    private Set<Customers> customers;
+
 
     @Column(name = "Name")
     private String animalName;
@@ -87,4 +93,6 @@ public class Animals {
     public void setCustId(int custId) {
         this.custId = custId;
     }
+
+
 }

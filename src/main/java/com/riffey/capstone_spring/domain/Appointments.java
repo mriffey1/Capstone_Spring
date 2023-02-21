@@ -12,7 +12,7 @@ public class Appointments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "appointment_id")
-    private int apptId;
+    private int appointId;
 
     @Column(name = "title")
     private String apptTitle;
@@ -29,12 +29,12 @@ public class Appointments {
     @Column(name = "start")
     private LocalDateTime apptStart;
 
-    public int getApptId() {
-        return apptId;
+    public int getAppointId() {
+        return appointId;
     }
 
-    public void setApptId(int apptId) {
-        this.apptId = apptId;
+    public void setApptId(int appointId) {
+        this.appointId = appointId;
     }
 
     public String getApptTitle() {
