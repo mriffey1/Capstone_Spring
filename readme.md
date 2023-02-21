@@ -39,6 +39,8 @@ and reports. The original application was basic and the goal is to provide addit
    - How to display the database data in a Thymeleaf template
 
 #### Updates
+Feb. 21, 2023: Began creating the list of appointments. Still working on JPA and Hibernate for join queries. In addition, will be keeping the CSS grid and making it responsive. 
+</br></br>
 Feb. 14, 2023: Added the Animals list and updated the navigation. In addition, modified the CSS to make current content more readable. Determined that replacing the CSS Grid will a table will work better.
 Still working on figuring out joining tables with JPA and Hibernate. 
 
